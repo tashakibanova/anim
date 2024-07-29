@@ -1,0 +1,32 @@
+.collapsible-btn {
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+  transition: .2s linear;
+  background: #0B63F6;
+  padding: 10px;
+}
+
+.collapsible-btn:hover {
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #3C82F8;
+}
+
+.collapsible-content {
+  display: none;
+  border: 1px dashed gray;
+  margin-top: 10px;
+  padding: 10px;
+  width: 30%;
+
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
